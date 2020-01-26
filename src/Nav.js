@@ -16,7 +16,7 @@ import {
 class Nav extends Component {
   render () {
     
-    var prePath = "";
+    var prePath = "/Barber-react";
     return (
  
       <Router>
@@ -40,7 +40,7 @@ class Nav extends Component {
               <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to={prePath + "/Reservision"}> Reservision</Link></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to={prePath + "/"}> Home</Link></a>
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to={ "/Barber-react"}> Home</Link></a>
             </li>
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to={prePath + "/products"}>products</Link> </a>
@@ -50,7 +50,7 @@ class Nav extends Component {
       </div>
     </nav>
      </nav>
-     <Route exact path="/"  ><Home cut={db}></Home></Route>
+     <Route exact path="/Barber-react"  ><Home cut={db}></Home></Route>
       <Route  path="/products" component={Products} />  
       <Route  path="/Branches" component={Branches} />
      <Route path="/Reservision" component={Reservision}> <Reservision></Reservision></Route>
